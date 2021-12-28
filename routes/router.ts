@@ -1,6 +1,6 @@
 import { Router } from "../deps.ts";
 import authController from "../controllers/AuthController.ts";
-import surveyController from "../controllers/SurveyController.ts";
+
 const router = new Router();
 
 router
@@ -10,7 +10,5 @@ router
   .post("/api/login", authController.login)
   .post("/api/register", authController.register);
 // For Survey
-router
-  .get("/api/surveys", surveyController.getSurveys);
 
 export default router;
